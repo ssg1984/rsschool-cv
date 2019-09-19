@@ -31,6 +31,7 @@ I have good analytical skills, learning new things is the best way to advance yo
 * Git
 * Adobe Photoshop, Figma
 * Intermediate English language skills
+* ReactJS
 
 ### Education
 
