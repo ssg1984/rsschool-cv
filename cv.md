@@ -11,8 +11,6 @@
 
 ## Summary
 
-***
-
 ### About me
 
 My goals is following:
