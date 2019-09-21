@@ -31,6 +31,20 @@ I have good analytical skills, learning new things is the best way to advance yo
 * Intermediate English language skills
 * ReactJS
 
+### Code example
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+   <script>
+    alert( 'Привет, мир!' );
+  </script>
+  </body>
+</html>
+
+```
+
 ### Education
 
 Master degree in Foreign Affairs at [BSU](https://fir.bsu.by/en/)
