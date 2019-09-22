@@ -1,0 +1,267 @@
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    min-height: 61rem;
+    font-size: 4px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background: #0a4929;
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+/*specification END*/
+
+.header {
+    display: flex;
+    padding: 17rem 10rem 7rem;
+}
+
+.profile-photo {
+    width: 50rem;
+    height: 55rem;
+    margin-right: 9rem;
+    border-radius: 5rem;
+    object-fit: cover;
+}
+
+.profile__title {
+    margin: 0;
+    font-size: 10rem;
+    font-weight: 800;
+    line-height: 0.8;
+}
+
+.profile__subtitle,
+.period {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    color: #fbdb00;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 5rem;
+    background: #1c150a;
+}
+
+.profile__subtitle {
+    margin: 3rem 0 2rem;
+}
+
+.profile__graph {
+    font-size: 3rem;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+}
+
+/*header END*/
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.experience {
+    width: calc(100% - 66.5rem);
+    height: 100%;
+    padding: 10rem 19rem 13rem 10rem;
+    background: #759b7e;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.contacts {
+    width: 66.5rem;
+    padding-left: 10rem;
+    font-style: normal;
+}
+
+.contacts__title {
+    margin: 0 0 6rem;
+    font-size: 9rem;
+    font-weight: 800;
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.contacts__icon {
+    width: 5rem;
+}
+
+.contacts__icon i {
+    font-size: 5rem;
+    color: #fbdb00;
+}
+
+.contacts__data {
+    padding-left: 2rem;
+    font-size: 3.5rem;
+}
+
+article:not(:first-child) {
+    padding-top: 14rem;
+}
+
+.article-header {
+    position: relative;
+    font-size: 7.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.article-header:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 60%;
+    height: 0.3rem;
+    margin-top: -0.15rem;
+    background: #ffffff;
+}
+
+.article-body {
+    display: flex;
+    padding-top: 5rem;
+    justify-content: space-between;
+}
+
+.position {
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.period {
+    margin: 0;
+}
+
+.position-description {
+    font-size: 4rem;
+    letter-spacing: 0.03em;
+}
+
+.position-description a {
+    display: block;
+    padding: 1rem;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.skills-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.skills-list li {
+    position: relative;
+    padding: 1.5rem 3rem;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+/*media queries*/
+@media (max-width: 1024px) {
+    html {
+        font-size: 3.5px;
+    }
+
+    .container {
+        max-width: unset;
+    }
+
+    .experience {
+        border-top-right-radius: 0;
+    }
+
+    .article-body {
+        display: block;
+    }
+
+    .position-description {
+        padding-top: 5rem;
+    }
+
+    .article-header:after {
+        right: unset;
+        left: 0;
+        top: unset;
+        bottom: -3px;
+    }
+}
+
+@media (max-width: 680px) {
+    html {
+        font-size: 3.25px;
+    }
+
+    .experience {
+        padding: 7rem 10rem 10rem 7rem;
+    }
+}
+
+@media (max-width: 580px) {
+    html {
+        font-size: 3px;
+    }
+
+    .header,
+    .main {
+        display: block;
+    }
+
+    .profile-photo {
+        margin-bottom: 6rem;
+    }
+
+    .experience {
+        width: 100%;
+        padding-left: 10rem;
+    }
+}
+
+@media (max-width: 390px) {
+    html {
+        font-size: 2.75px;
+    }
+
+    .profile__title {
+        font-size: 11rem;
+    }
+
+}
